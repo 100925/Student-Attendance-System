@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Attendance Management System</h1>
+
+        <div class="form-container">
+
+            <h2>Add Student</h2>
+
+            <label for="name">Student name</label>
+            <input maxlength="100" type="text" id="name" placeholder="Enter Student Name">
+
+            <label for="roll">Roll number</label>
+            <input maxlength="30" type="text" id="roll" placeholder="Enter Roll Number">
+
+            <button onclick="addStudent()">Add Student</button>
+
+        </div>
+
+        <div class="table-container">
+
+            <h2>Student Records</h2>
+            <p id="message" role="status" aria-live="polite"></p>
+            <button onclick="refreshStudents()">Refresh records</button>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Present</th>
+                        <th>Absent</th>
+                        <th>Attendance %</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

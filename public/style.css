@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.form-container{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:30px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2{
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.form-container button{
+    background:#007bff;
+    color:white;
+}
+
+.form-container button:hover{
+    background:#0056b3;
+}
+
+.table-container{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+.present-btn{
+    background:green;
+    color:white;
+    margin-right:5px;
+}
+
+.present-btn:hover{
+    background:darkgreen;
+}
+
+.absent-btn{
+    background:red;
+    color:white;
+}
+
+.absent-btn:hover{
+    background:darkred;
+}
+
+.present-status{
+    color:green;
+    font-weight:bold;
+}
+
+.absent-status{
+    color:red;
+    font-weight:bold;
+}
+
+.not-marked{
+    color:orange;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    table{
+        font-size:12px;
+    }
+
+    button{
+        margin-top:5px;
+    }
+}
+.table-container { overflow-x: auto; }
+button:disabled { opacity: .55; cursor: wait; }
+.delete-btn { background: #475569; color: white; margin: 4px; }
+#message { margin: 12px 0; min-height: 24px; }
+label { display:block; margin-bottom:6px; }
